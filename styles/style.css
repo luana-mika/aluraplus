@@ -1,0 +1,184 @@
+.inter-<uniquifier> {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+}
+
+:root{
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #00030C;
+    --botao-azul-efeito: #3c92fa;
+    
+    --fonte-principal:"Inter", sans-serif;
+
+}
+
+*{ /*estilo global*/
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.principal{ /*foto de fundo para prencher o tamanho da pg inteira*/
+    background-image: url("../img/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center; /*alinhar os itens dentro de um contêiner com display: flex ou display: grid. Ela alinha os itens verticalmente (no eixo Y) dentro do contêiner.*/
+    text-align: center; /*alinhar todos os elementos inline (como texto, imagens e links) dentro de um bloco, independentemente do tipo de elemento*/
+}
+
+.container{
+    height: 100vh; /*tela inteira*/
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__caixa{
+    margin: 0 6em;
+}
+
+.container__titulo{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__imagem{
+    margin: 1em 0 2em 0;  /*cima  direito  baixo  esquerdo*/
+}
+
+.container__botao{
+    background-color: var(--botao-azul);
+    border-radius: 8px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.botao__secundario{
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+
+.container__aviso{
+    font-size: 12px;
+    color:var(--cinza-secundario);
+}
+
+.secundario__imagem{
+    width: 80%;
+}
+
+.secundario{
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao__titulo{
+    font-weight: 700;
+    font-size: 48px;
+    color:var(--branco-principal);
+    margin-botton: 0.1em;
+}
+
+.descricao__texto{
+    color: var(--cinza-secundario);
+    margin-right: 8%;
+}
+
+.terciário{
+    align-items: center;
+    margin: 0 8em;
+}
+
+.container__descricao{
+    padding: 3em;
+}
+
+.botao__terciario{
+    display: inline-block; /*tranformou o conteúdo em linha; block transformou em quebra de linha*/
+    margin-top: 1em;
+}
+
+.terciario__imagem{
+    width: 80%;
+    text-align: center;
+}
+
+.quaternario{
+    align-items: center;
+}
+
+.quaternario__imagem{
+    width: 80%;
+    margin: 1em 0 2em 10em;
+}
+
+.dispositivos{
+    text-align: center;
+}
+
+.dispositivos__titulo{
+    font-size: 48px;
+    color: var(--branco-principal);
+}
+
+.dispositivos__lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.lista__item{
+    font-size: 32px;
+    color: var(--branco-principal);
+}
+
+.rodape{
+    text-align: center;
+    margin: 5em 3em;
+}
+
+.rodape__lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 2em;
+}
+.lista__link a{
+    text-decoration: none;
+    margin-left: 1em;
+    color: var(--branco-principal);
+}
+
+.rodape__texto{
+    color: var(--cinza-secundario);
+    margin: 2em 0;
+    font-size: 14px;
+}
+
+.lista__link a:hover{
+    color: var(--botao-azul);
+}
+
+.lista__link a:active{
+    color: purple;
+}
+
+.container__botao:hover{
+    background-color: var(--botao-azul-efeito);
+    color: var(--cor-de-fundo);
+}
